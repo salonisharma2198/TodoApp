@@ -5,13 +5,13 @@ export const HeaderWrapper = styled('div')(({ theme }) => ({
 	height: '82px',
 	borderRadius: '0px, 0px, 8px, 8px',
 	border: '2px solid #A35709',
+	margin:'1px',
 }));
 
 export const TextWrapper = styled('div')(({ theme }) => ({
 	position: 'relative',
 	top: '17px',
 	marginLeft: '25px',
-	width: '100%'
 }));
 
 export const HeaderText = styled(Typography)(({ theme }) => ({
@@ -20,6 +20,7 @@ export const HeaderText = styled(Typography)(({ theme }) => ({
 	lineHeight: '28px',
 	letterSpacing: '0em',
 	textAlign: 'left',
+	width:'50%',
 }));
 
 export const HeaderSubText = styled(Typography)(({ theme }) => ({
@@ -28,6 +29,7 @@ export const HeaderSubText = styled(Typography)(({ theme }) => ({
 	lineHeight: '19px',
 	letterSpacing: '0em',
 	textAlign: 'left',
+	width:'50%',
 }));
 
 export const TodoTextField = styled(TextField)(({ theme }) => ({
@@ -36,22 +38,29 @@ export const TodoTextField = styled(TextField)(({ theme }) => ({
 	'& .MuiOutlinedInput-root': {
 		borderRadius: '4px',
 		border: '1px solid #FF8303',
-		height: '32px',
+		// height: '32px',
+		minHeight: '32px',
 		fontSize: '14px',
 		'&:hover fieldset': {
 			border: 'none',
-			height: '32px',
+			minHeight: '32px',
 		},
 		'&.Mui-focused fieldset': {
 			border: 'none',
-			height: '32px',
+			minHeight: '32px',
 		},
 	},
 	'& .MuiInputLabel-root': {
 		fontSize: '14px',
 		color: '#fff',
 	},
+	'& input, & textarea': {
+		maxHeight: '100px', 
+		overflowY: 'auto',
+		padding:'6px'
+	},
 }));
+
 
 export const TextFieldWrapper = styled('div')(({ theme }) => ({
 	display: 'flex',
@@ -66,6 +75,7 @@ export const ListFormWrapper = styled('div')(({ theme }) => ({
 	display: 'flex',
 	justifyContent: 'center',
 	alignItems: 'center',
+	padding:'42px'
 }));
 
 export const AddButton = styled(Button)(({ theme }) => ({

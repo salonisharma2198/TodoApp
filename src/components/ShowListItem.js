@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Grid, CardContent, Typography, CardActions, Divider } from '@mui/material';
 import { useListContext } from "./Context/ListContext";
 import { CardWrapper, CardOutLine, NoTaskFOund, CustomDivider, AlignContentCenter } from "./ToDoStyle";
+import DeleteModal from "./DeleteModal";
 import { InfoIcon, DeleteIcon, EditIcon, EditClickIcon } from "./asset";
 
 const ShowListItem = ({ handleEdit, indexChoosen, handleChoosenIndex, onEditClick }) => {
@@ -69,6 +70,7 @@ const ShowListItem = ({ handleEdit, indexChoosen, handleChoosenIndex, onEditClic
 				</AlignContentCenter>
 				}
 			</CardOutLine>
+			{onDelete && <DeleteModal open={onDelete} handleClose={handleDeleteModalClose} handleYesClick={handleDelete} />}
 		</listWrapper>
 	)
 }
