@@ -57,7 +57,6 @@ export const TodoTextField = styled(TextField)(({ theme }) => ({
 	'& input, & textarea': {
 		maxHeight: '100px', 
 		overflowY: 'auto',
-		padding:'6px'
 	},
 }));
 
@@ -79,13 +78,13 @@ export const ListFormWrapper = styled('div')(({ theme }) => ({
 }));
 
 export const AddButton = styled(Button)(({ theme }) => ({
-	width: '70px',
-	height: '78px',
+	width: '100px',
+	height: '119px',
 	borderRadius: '8px',
 	border: '2px solid #FF8303',
 	color: '#fff',
-	marginLeft: '5px',
-	fontSize: '12px',
+	marginLeft: '10px',
+	fontSize: '14px',
 	cursor: 'pointer',
 }));
 
