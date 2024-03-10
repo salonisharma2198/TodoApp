@@ -38,7 +38,7 @@ export const TodoTextField = styled(TextField)(({ theme }) => ({
 	'& .MuiOutlinedInput-root': {
 		borderRadius: '4px',
 		border: '1px solid #FF8303',
-		// height: '32px',
+		padding: 4,
 		minHeight: '32px',
 		fontSize: '14px',
 		'&:hover fieldset': {
@@ -48,16 +48,20 @@ export const TodoTextField = styled(TextField)(({ theme }) => ({
 		'&.Mui-focused fieldset': {
 			border: 'none',
 			minHeight: '32px',
+			padding: 4,
 		},
 	},
 	'& .MuiInputLabel-root': {
 		fontSize: '14px',
 		color: '#fff',
+		padding: 4,
 	},
-	'& input, & textarea': {
+	'& input,& textarea': {
+		color: '#FFF',
+		padding: 4,
 		maxHeight: '100px', 
 		overflowY: 'auto',
-	},
+},
 }));
 
 
@@ -78,8 +82,8 @@ export const ListFormWrapper = styled('div')(({ theme }) => ({
 }));
 
 export const AddButton = styled(Button)(({ theme }) => ({
-	width: '100px',
-	height: '119px',
+	width: '70px',
+	height: '82px',
 	borderRadius: '8px',
 	border: '2px solid #FF8303',
 	color: '#fff',
